@@ -1,8 +1,0 @@
-{
-    "name": "niumedia/website",
-    "description": "Niumedia Website REDESIGN",
-    "type": "project",
-    "require": {
-        "php": ">=7.4"
-    }
-}
