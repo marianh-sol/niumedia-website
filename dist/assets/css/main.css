@@ -11606,3 +11606,5 @@ img[src*='elements5.png'],
 .header-area img[src*='icons/'] {
     filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(345deg) brightness(98%) contrast(92%) !important;
 }
+a:hover, a:focus { color: #F16A21 !important; }
+.active { color: #F16A21 !important; }
