@@ -2455,7 +2455,7 @@ Location:
   width: 100%;
   left: 0;
   bottom: 0;
-  background: linear-gradient(180deg, rgba(206, 241, 43, 0) 15.45%, rgba(206, 241, 43, 0.7) 77.05%);
+  background: linear-gradient(180deg, rgba(241, 106, 33, 0) 15.45%, rgba(241, 106, 33, 0.7) 77.05%);
   transition: all 0.4s;
   border-radius: 16px;
 }
@@ -8256,7 +8256,7 @@ Location:
   bottom: 0;
   left: 0;
   transition: all 0.4s;
-  background: linear-gradient(180deg, rgba(206, 241, 43, 0) 42.14%, rgba(206, 241, 43, 0.9) 77.05%);
+  background: linear-gradient(180deg, rgba(241, 106, 33, 0) 42.14%, rgba(241, 106, 33, 0.9) 77.05%);
   z-index: 1;
 }
 .team1-section-area .team-author-boxarea:hover::after {
@@ -8414,7 +8414,7 @@ Location:
   bottom: 0;
   left: 0;
   transition: all 0.4s;
-  background: linear-gradient(180deg, rgba(206, 241, 43, 0) 42.14%, rgba(254, 254, 31, 0.9) 77.05%);
+  background: linear-gradient(180deg, rgba(241, 106, 33, 0) 42.14%, rgba(254, 254, 31, 0.9) 77.05%);
   z-index: 1;
 }
 .team2-section-area .team-author-boxarea:hover::after {
@@ -8654,7 +8654,7 @@ Location:
   left: 0;
   bottom: 0;
   transition: all 0.4s;
-  background: linear-gradient(180deg, rgba(206, 241, 43, 0) 42.14%, rgba(206, 241, 43, 0.63) 77.05%);
+  background: linear-gradient(180deg, rgba(241, 106, 33, 0) 42.14%, rgba(241, 106, 33, 0.63) 77.05%);
   border-radius: 16px;
 }
 .team3-section-area .team2-boxarea .img1 img {
@@ -11513,4 +11513,96 @@ Location:
 /* Cambio dinámico de color para elementos de la plantilla */
 img[src*='assets/img/elements/'], img[src*='assets/img/all-images/bg/'] {
     filter: hue-rotate(-50deg) saturate(1.2);
+}
+
+/* ==========================================================================
+   NIUMEDIA CUSTOM STYLES (ALTERNATING THEMES)
+   ========================================================================== */
+.section-light {
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+    color: #03060A !important;
+}
+.section-light .container {
+    background: transparent !important;
+}
+.section-light h1, 
+.section-light h2, 
+.section-light h3, 
+.section-light h4, 
+.section-light h5, 
+.section-light h6,
+.section-light .heading1 h2,
+.section-light .heading2 h2,
+.section-light .heading3 h2,
+.section-light .heading1 h5,
+.section-light .heading2 h5,
+.section-light .heading3 h5 {
+    color: #03060A !important;
+    -webkit-text-fill-color: initial !important; /* Desactiva degradados si los hay */
+}
+.section-light p, 
+.section-light li, 
+.section-light a:not(.vl-btn1):not(.vl-btn2), 
+.section-light span,
+.section-light .heading1 p,
+.section-light .heading2 p,
+.section-light .heading3 p {
+    color: #444444 !important;
+}
+.section-light .about-boxarea,
+.section-light .service-boxarea,
+.section-light .case-boxarea {
+    background: #f9f9f9 !important;
+    border: 1px solid #eeeeee !important;
+}
+.section-light .about-boxarea h3 a,
+.section-light .service-boxarea h3 a {
+    color: #03060A !important;
+}
+.section-light .accordion-button {
+    background-color: #f9f9f9 !important;
+    color: #03060A !important;
+}
+.section-light .accordion-item {
+    background-color: #ffffff !important;
+    border: 1px solid #eeeeee !important;
+}
+.section-light .accordion-body p {
+    color: #444444 !important;
+}
+.section-light {
+    background-color: #FFFFFF !important;
+    color: #111111 !important;
+    position: relative;
+    z-index: 1;
+}
+.section-light .heading1 h2, .section-light .heading2 h2 {
+    color: #111111 !important;
+}
+.section-light p, .section-light .heading1 p {
+    color: #444444 !important;
+}
+/* Arreglo para acordeones en blanco */
+.section-light .accordion-button:not(.collapsed) {
+    background-color: #F16A21 !important;
+    color: #FFFFFF !important;
+}
+.section-light .accordion-button {
+    background-color: #f7f7f7;
+    color: #111111;
+}.header-area img {
+    max-height: 55px !important;
+    width: auto !important;
+}
+.mobile-header img, .offcanvas-header img {
+    max-height: 50px !important;
+}
+/* Conversión de iconos y sub-logos al naranja de Niumedia */
+img[src*='sub-logo'], 
+img[src*='icons/star'], 
+img[src*='elements5.png'], 
+.about1-section-area img[src*='icons/'],
+.header-area img[src*='icons/'] {
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(345deg) brightness(98%) contrast(92%) !important;
 }
