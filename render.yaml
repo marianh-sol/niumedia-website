@@ -1,10 +1,7 @@
 services:
-  - type: web
+  - type: static
     name: niumedia-website
-    runtime: php
-    plan: free
-    buildCommand: composer install
-    publishPath: .
-    envVars:
-      - key: PHP_VERSION
-        value: 8.1
+    env: static
+    buildCommand: ""
+    staticPublishPath: ./dist
+
