@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: niumedia-website
+    runtime: php
+    plan: free
+    buildCommand: composer install
+    publishPath: .
+    envVars:
+      - key: PHP_VERSION
+        value: 8.1
