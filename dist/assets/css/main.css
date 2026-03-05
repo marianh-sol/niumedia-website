@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap");
+﻿@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap");
 a, a:hover {
   text-decoration: none;
 }
@@ -418,24 +418,24 @@ img {
 }
 :root {
   --ztc-text-text-1: #fff;
-  --ztc-text-text-2: #9FBD17;
+  --ztc-text-text-2: #F16A21;
   --ztc-text-text-3: rgba(255, 255, 255, 0.8);
   --ztc-text-text-4: #03060A;
   --ztc-text-text-5: rgba(17, 17, 17, 0.9);
-  --ztc-text-text-6: #FEFE1F;
+  --ztc-text-text-6: #F16A21;
   --ztc-text-text-7: #03060A;
-  --ztc-text-text-8: #CEF12B;
-  --ztc-text-text-9: #FEFE1F;
+  --ztc-text-text-8: #F16A21;
+  --ztc-text-text-9: #F16A21;
   --ztc-text-text-10: #03060A;
   --ztc-text-text-11: #F13A00;
   --ztc-bg-bg-1: #fff;
-  --ztc-bg-bg-2: #9FBD17;
+  --ztc-bg-bg-2: #F16A21;
   --ztc-bg-bg-3: rgba(255, 255, 255, 0.06);
-  --ztc-bg-bg-4: #FEFE1F;
+  --ztc-bg-bg-4: #F16A21;
   --ztc-bg-bg-5: #03060A;
   --ztc-bg-bg-6: #2D3034;
-  --ztc-bg-bg-7: #CEF12B;
-  --ztc-bg-bg-8: #FEFE1F;
+  --ztc-bg-bg-7: #F16A21;
+  --ztc-bg-bg-8: #F16A21;
   --ztc-bg-bg-9: #03060A;
   --ztc-bg-bg-10: var(--Color, linear-gradient(90deg, #FF4308 0%, #FB8500 100%));
   --ztc-border-border-1: #E5E7EB;
@@ -2035,7 +2035,7 @@ Location:
 }
 .hero1-section-area .hero-header-area h1 .others-img1 {
   border-radius: 110px;
-  border: 2px solid var(--Main-Color, #CEF12B);
+  border: 2px solid var(--Main-Color, #F16A21);
   background: rgba(255, 255, 255, 0.1);
   padding: 10px 16px;
   width: 150px;
@@ -3140,7 +3140,7 @@ Location:
 }
 .inner-section-area .hero-header-area h1 .others-img1 {
   border-radius: 110px;
-  border: 2px solid var(--Main-Color, #CEF12B);
+  border: 2px solid var(--Main-Color, #F16A21);
   background: rgba(255, 255, 255, 0.1);
   padding: 10px 16px;
   width: 150px;
@@ -11509,3 +11509,8 @@ Location:
 }
 
 /*============= ABOUT CSS AREA ENDS ===============*//*# sourceMappingURL=main.css.map */
+
+/* Cambio dinámico de color para elementos de la plantilla */
+img[src*='assets/img/elements/'], img[src*='assets/img/all-images/bg/'] {
+    filter: hue-rotate(-50deg) saturate(1.2);
+}
